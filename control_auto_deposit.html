@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Rca77 Admin</title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		
+		<!-- 	font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<!-- 	font awesome -->
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default          ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>				</button>
+
+				<div class="navbar-header pull-left">
+					<a href="index.php" class="navbar-brand">
+						<small>
+
+							Rca77 Admin						</small>					</a>				</div>
+
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="grey dropdown-modal">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-tasks"></i>
+								<span class="badge badge-grey">4</span>							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-check"></i>
+									4 Tasks to complete								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">Software Update</span>
+													<span class="pull-right">65%</span>												</div>
+
+												<div class="progress progress-mini">
+													<div style="width:65%" class="progress-bar"></div>
+												</div>
+											</a>										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">Hardware Upgrade</span>
+													<span class="pull-right">35%</span>												</div>
+
+												<div class="progress progress-mini">
+													<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+												</div>
+											</a>										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">Unit Testing</span>
+													<span class="pull-right">15%</span>												</div>
+
+												<div class="progress progress-mini">
+													<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+												</div>
+											</a>										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">Bug Fixes</span>
+													<span class="pull-right">90%</span>												</div>
+
+												<div class="progress progress-mini progress-striped active">
+													<div style="width:90%" class="progress-bar progress-bar-success"></div>
+												</div>
+											</a>										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="#">
+										See tasks with details
+										<i class="ace-icon fa fa-arrow-right"></i>									</a>								</li>
+							</ul>
+						</li>
+
+						<li class="purple dropdown-modal">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-bell icon-animated-bell"></i>
+								<span class="badge badge-important">8</span>							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-exclamation-triangle"></i>
+									8 Notifications								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar navbar-pink">
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">
+														<i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
+														New Comments													</span>
+													<span class="pull-right badge badge-info">+12</span>												</div>
+											</a>										</li>
+
+										<li>
+											<a href="#">
+												<i class="btn btn-xs btn-primary fa fa-user"></i>
+												Bob just signed up as an editor ...											</a>										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">
+														<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
+														New Orders													</span>
+													<span class="pull-right badge badge-success">+8</span>												</div>
+											</a>										</li>
+
+										<li>
+											<a href="#">
+												<div class="clearfix">
+													<span class="pull-left">
+														<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>
+														Followers													</span>
+													<span class="pull-right badge badge-info">+11</span>												</div>
+											</a>										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="#">
+										See all notifications
+										<i class="ace-icon fa fa-arrow-right"></i>									</a>								</li>
+							</ul>
+						</li>
+
+						<li class="green dropdown-modal">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									5 Messages								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Alex:</span>
+														Ciao sociis natoque penatibus et auctor ...													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>a moment ago</span>													</span>												</span>											</a>										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Susan:</span>
+														Vestibulum id ligula porta felis euismod ...													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>20 minutes ago</span>													</span>												</span>											</a>										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Bob:</span>
+														Nullam quis risus eget urna mollis ornare ...													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>3:15 pm</span>													</span>												</span>											</a>										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kate:</span>
+														Ciao sociis natoque eget urna mollis ornare ...													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>1:33 pm</span>													</span>												</span>											</a>										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Fred:</span>
+														Vestibulum id penatibus et auctor  ...													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>10:09 am</span>													</span>												</span>											</a>										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										See all messages
+										<i class="ace-icon fa fa-arrow-right"></i>									</a>								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue dropdown-modal">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/images/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason								</span>
+
+								<i class="ace-icon fa fa-caret-down"></i>							</a>
+
+							<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									
+										<i class="ace-icon fa fa-cog"></i>
+										Settings									</a>								</li>
+
+								<li>
+									<a href="profile.html">
+										<i class="ace-icon fa fa-user"></i>
+										Profile									</a>								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="ace-icon fa fa-power-off"></i>
+										Logout									</a>								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-signal"></i>						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-pencil"></i>						</button>
+
+						<button class="btn btn-warning">
+							<i class="ace-icon fa fa-users"></i>						</button>
+
+						<button class="btn btn-danger">
+							<i class="ace-icon fa fa-cogs"></i>						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="active">
+						<a href="index.php">
+							<i class="fas fa-tachometer-alt"></i>
+							<span class="menu-text"> Dashboard </span>						</a>
+
+						<b class="arrow"></b>					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="fas fa-cogs"></i>
+							<span class="menu-text"> Member Setup </span>
+
+							<b class="arrow fa fa-angle-down"></b>						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Create Member								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Create Agent								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User List								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Status								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Keep								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									USer Return								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Structure								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Online								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Sub Agent								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Monitor Casino								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Change Password								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									History Log								</a>
+
+								<b class="arrow"></b>							</li>
+						</ul>
+					</li>
+					
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="fas fa-dice"></i>
+							<span class="menu-text"> Dice </span>
+
+							<b class="arrow fa fa-angle-down"></b>						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Summary Today								</a>
+
+								<b class="arrow"></b>							</li>
+							
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Win or lose by player								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Bill								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Bet Reject								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Robot								</a>
+
+								<b class="arrow"></b>							</li>	
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Result								</a>
+
+								<b class="arrow"></b>							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="fas fa-dice"></i>
+							<span class="menu-text"> Card </span>
+
+							<b class="arrow fa fa-angle-down"></b>						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Summary Today								</a>
+
+								<b class="arrow"></b>							</li>
+							
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Win or lose by player								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Bill								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Bet Reject								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Robot								</a>
+
+								<b class="arrow"></b>							</li>	
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Result								</a>
+
+								<b class="arrow"></b>							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="fas fa-dollar-sign"></i>
+							<span class="menu-text"> Cash </span>
+
+							<b class="arrow fa fa-angle-down"></b>						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								
+									<i class="menu-icon fa fa-caret-right"></i>
+									<a href="setting.html">Setting</a>
+
+								<b class="arrow"></b>							</li>
+							
+							<li class="">
+								<a href="bank.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Bank								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="deposit_list.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Deposit List								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="withdrawal.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Withdrawal List								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="report.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Report								</a>
+
+								<b class="arrow"></b>							</li>	
+
+							<li class="">
+								<a href="subagentreport.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Sub Agent Report								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="user_report.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Report								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="report_credit_change_manual.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Report Credit Change Manual								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="control_auto_deposit.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Control Auto Deposit								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="">
+									<i class="menu-icon fa fa-caret-right"></i>
+									COntrol Live Chat								</a>
+
+								<b class="arrow"></b>							</li>
+
+							<li class="">
+								<a href="user_group_bank.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Group Bank								</a>
+
+								<b class="arrow"></b>							</li>
+						</ul>
+					</li>
+				</ul><!-- /.nav-list -->
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="#">Home</a>							</li>
+							<li class="active">Dashboard</li>
+							
+							<li class="active">Control Auto Deposit</li>
+						</ul>
+			      <!-- /.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+<div class="page-content">
+						<div class="ace-settings-container" id="ace-settings-container">
+							<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+								<i class="ace-icon fa fa-cog bigger-130"></i>							</div>
+
+							<div class="ace-settings-box clearfix" id="ace-settings-box">
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+										<div class="pull-left">
+											<select id="skin-colorpicker" class="hide">
+												<option data-skin="no-skin" value="#438EB9">#438EB9</option>
+												<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+												<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+												<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+											</select>
+										</div>
+										<span>&nbsp; Choose Skin</span>									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-navbar" autocomplete="off" />
+										<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-sidebar" autocomplete="off" />
+										<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-breadcrumbs" autocomplete="off" />
+										<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" autocomplete="off" />
+										<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-add-container" autocomplete="off" />
+										<label class="lbl" for="ace-settings-add-container">
+											Inside
+											<b>.container</b>										</label>
+									</div>
+								</div><!-- /.pull-left -->
+
+								<div class="pull-left width-50">
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off" />
+										<label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off" />
+										<label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+									</div>
+
+									<div class="ace-settings-item">
+										<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" autocomplete="off" />
+										<label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+									</div>
+								</div><!-- /.pull-left -->
+							</div><!-- /.ace-settings-box -->
+						</div><!-- /.ace-settings-container -->
+
+						<div class="page-header">
+							<h1>
+								Dashboard
+								<small>
+									<i class="ace-icon fa fa-angle-double-right"></i>
+									overview &amp; stats								</small>							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								
+								
+<div class="page-content" id="pageContent" style=""><style type="text/css">
+   .no_border {
+        border: 0px !important;
+   }
+</style>
+<div class="tabbable">
+    <ul class="nav nav-tabs padding-12 tab-color-blue background-blue">
+        <li class="active">
+            <a data-toggle="tab" href="#controlmobile" onclick="mobileList();" aria-expanded="true">
+                <i class="menu-icon fa"></i>
+                <h7>Mobile</h7>
+            </a>
+        </li>
+        <li class="">
+            <a data-toggle="tab" href="#controluser" onclick="userList();" aria-expanded="false">
+                <i class="menu-icon fa "></i>
+                <h7>User</h7>
+            </a>
+        </li>
+        <li class="">
+            <a data-toggle="tab" href="#controlmanual" onclick="userList();" aria-expanded="false">
+                <i class="menu-icon fa "></i>
+                <h7>Manual</h7>
+            </a>
+        </li>
+        <li class="pull-right" style="margin-right : 5px;">
+           <button type="button" disabled="" class="btn btn-sm btn-yellow pull-right">
+                <div id="clock" class=""><i class="fa fa-refresh fa-spin" aria-hidden="true"></i> 01 &nbsp;&nbsp;(<i id="record">0</i>)</div>
+                <script type="text/javascript">
+                    function timeCountDownDeposit(){
+                        var fiveSeconds = new Date().getTime() + 15000;
+                        $('#clock').countdown(fiveSeconds, function(event) {
+                        var $this = $(this).html(event.strftime('<i class="fa fa-refresh fa-spin" aria-hidden="true"></i> %S &nbsp;&nbsp;(<i id=record>0</i>)'));
+                            if(event.strftime('%S')==0){
+                                autoDeposit();
+                                timeCountDownDeposit();
+                            }
+                        });
+                    }
+                    timeCountDownDeposit();
+                </script>
+          </button>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="controlmobile" class="tab-pane fade active in">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-sm-12 text-right">
+                    <button type="button" name="search" class="btn btn-primary btn-sm" onclick="addMobile();">
+                        + &nbsp; Add Mobile
+                    </button>
+                </div>
+                <hr>
+                <div class="col-xs-12 col-md-12 col-sm-12">
+                    <div id="mobileList">    <span class="red"> No Data </span>
+</div>
+                </div> 
+            </div>           
+        </div>
+        <div id="controluser" class="tab-pane fade">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-1 control-label"><strong>Username : </strong></label>
+                    <div class="col-xs-6 col-sm-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="username" name="username">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-8">
+                        <button type="button" name="search" class="btn btn-primary btn-sm" onclick="userList();">
+                            <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
+                            Search                        </button>
+                        <button type="button" name="search" class="btn btn-primary btn-sm" onclick="addUser();">
+                            + &nbsp; Add User
+                        </button>
+                    </div>
+                </div>
+            </form>
+             <div class="table-responsive">
+                <table id="userList" class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center">No </th>
+                            <th class="text-center">Username</th>
+                            <th class="text-center">Account Number</th>
+                            <th class="text-center">Bank EN</th>
+                            <th class="text-center">Bank TH</th>
+                            <th class="text-center">Bank Short</th>
+                            <th class="text-center">Date/Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>	<td colspan="7" class="red"><center><strong> No Data </strong></center></td>
+</tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="11">
+                                Page <span class="badge badge-primary" name="pageNum">1</span> || Show <span name="listCount">1</span> Row                                <div class="form-group pull-right">
+                                    <button type="button" class="btn btn-prev btn-sm" name="prevPage" disabled="disabled" onclick="userList(this);">
+                                        <i class="ace-icon fa fa-arrow-left"></i>Prev                                    </button>
+                                    
+                                    <button type="button" class="btn btn-success btn-next btn-sm" disabled="disabled" name="nextPage" onclick="userList(this);">
+                                        Next <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>                
+        </div>
+        <div id="controlmanual" class="tab-pane fade">
+            <a href="http://cashmoney.928club.com/sms-list.apk" target="_blank"><h4>Download Application version </h4></a> 
+            <a href="http://cashmoney.928club.com/manual_autodeposit_v-0-1.pdf" target="_blank"><h4>Download Manual</h4></a> 
+        </div>
+    </div>
+    <div id="showModal"></div>
+</div>
+<script type="text/javascript">
+    function mobileList(){
+        $.ajax({
+            url: 'depositAuto/mobileList',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                $('#mobileList').html(response.data);
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        });
+    }
+
+    function addMobile(){
+        bootbox.dialog({
+            message: '<br/>'+
+                '<div class="widget-box">'+
+                    '<div class="widget-header " >'+
+                       '<h4 class="widget-title lighter"><strong> <font class="blue"> Register Mobile </font> </strong></h4>'+
+                    '</div>'+
+                    '<div class="widget-body">'+
+                        '<form class="form-horizontal" method="post">'+
+                            '<div class="widget-main">'+
+                                '<div class="row">'+
+                                    '<div class="col-xs-12 col-sm-12">'+
+                                        '<div class="col-xs-12 col-sm-12 form-group">'+
+                                            '<label class="col-xs-5 col-sm-5 col-pull-2 control-label"><strong>Mobile Number:&nbsp;</strong></label>'+
+                                            '<div class="col-xs-5 col-sm-5">'+
+                                                '<input type="text" id="mobile_number" name="mobile_number" value="" />'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="col-xs-12 col-sm-12">'+
+                                        '<div class="col-xs-12 col-sm-12 form-group">'+
+                                            '<label class="col-xs-5 col-sm-5 col-pull-2 control-label"><strong>Register Code:&nbsp;</strong></label>'+
+                                            '<div class="col-xs-5 col-sm-5">'+
+                                                '<input type="text" id="regis_code" name="regis_code" value=""/>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</form>'+
+                    '</div>'+
+                '</div>',
+            buttons:            
+            {
+                "OK" :
+                {
+                    "label" : "<i class='ace-icon fa fa-check '></i> Save",
+                    "className" : "btn-sm btn-primary",
+                    "callback": function(e) {
+
+                        if($("#mobile_number").val() == ''){
+                            dialogError("No Data");
+                            return false;
+                        }else if($("#regis_code").val() == ''){
+                            dialogError("No Data");
+                            return false;
+                        }else{
+                            $.ajax({
+                                url: 'depositAuto/addMobile',
+                                data: { 
+                                    mnum    : $("#mobile_number").val(),
+                                    cregis  : $("#regis_code").val()
+                                },
+                                type: 'GET',
+                                dataType: 'json',
+                                success: function (response) {
+                                    if(response.status){
+                                        dialogSuccess(response.msg);
+                                        mobileList();
+                                    }else{
+                                        dialogError(response.msg);
+                                    }
+                                },
+                                error: function (response) {
+                                    console.log(response);
+                                }
+                            });
+                        }
+                    }
+                },
+                "NO" :
+                {
+                    "label" : "<i class='ace-icon fa fa-close'></i> Cancel",
+                    "className" : "btn-sm btn-danger"
+                }
+            }
+        });
+    }
+
+    function gsmsList(mac){
+
+        $.ajax({
+            url: 'depositAuto/gsmsList',
+            data: { 
+                mac : mac,
+            },
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                $("#showModal").html(response.data);
+                $("#gsmsList").modal('show');
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        });
+    }
+
+
+    function userList(btnow){
+        $.ajax({
+            url: 'depositAuto/userList',
+            type: 'GET',
+            data: { 
+                user    : $("#username").val(),
+                page    : $("#userList").data('pageNum'),
+                btn     : $(btnow).attr('name')
+            },
+            dataType: 'json',
+            success: function (response) {
+                $('#userList tbody').html(response.data);
+
+                $("#userList").data('pageNum',response.opt.page);
+                $('span[name="pageNum"]').text(response.opt.page);
+                $('span[name="listCount"]').text(response.opt.listCount);
+                
+                if(response.opt.listCount == 50){
+                    $('button[name="nextPage"]').attr('disabled',false);
+                }else{
+                    $('button[name="nextPage"]').attr('disabled',true);
+                }
+
+                if(response.opt.page != 1){
+                    $('button[name="prevPage"]').attr('disabled',false);
+                }else{
+                    $('button[name="prevPage"]').attr('disabled',true);
+                }
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        });
+    }
+
+    function addUser(){
+        bootbox.dialog({
+            message: '<br/>'+
+                '<div class="widget-box">'+
+                    '<div class="widget-header " >'+
+                       '<h4 class="widget-title lighter"><strong> <font class="blue"> Register User </font> </strong></h4>'+
+                    '</div>'+
+                    '<div class="widget-body">'+
+                        '<form class="form-horizontal" method="post">'+
+                            '<div class="widget-main">'+
+                                '<div class="row">'+
+                                    '<div class="col-xs-12 col-sm-12">'+
+                                        '<div class="col-xs-12 col-sm-12 form-group">'+
+                                            '<label class="col-xs-5 col-sm-5 col-pull-2 control-label"><strong>Username:&nbsp;</strong></label>'+
+                                            '<div class="col-xs-5 col-sm-5">'+
+                                                '<input type="text" id="user" name="user" value="" />'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="col-xs-12 col-sm-12">'+
+                                        '<div class="col-xs-12 col-sm-12 form-group">'+
+                                            '<label class="col-xs-5 col-sm-5 col-pull-2 control-label"><strong>Bank ID:&nbsp;</strong></label>'+
+                                            '<div class="col-xs-5 col-sm-5">'+
+                                                '<select class="form-control col-xs-12 col-sm-6 input-sm" id="bid" name="bid">'+
+                                                    '<option value="0"> -- please select bank -- </option>'+
+                                                    '<option value="1">Kasikorn Bank</option>'+
+                                                    '<option value="2">Bangkok Bank</option>'+
+                                                    '<option value="3">Bank of  Ayudhya</option>'+
+                                                    '<option value="4">Siam Commercial Bank</option>'+
+                                                    '<option value="5">Krung Thai Bank</option>'+
+                                                    '<option value="6">Siam City Bank</option>'+
+                                                    '<option value="7">United Overseas Bank</option>'+
+                                                    '<option value="8">Thai Military Bank</option>'+
+                                                    '<option value="9">Tisco bank</option>'+
+                                                    '<option value="10">Industrial and Commercial Bank of China (Thai)</option>'+
+                                                    '<option value="11">Kiatnakin Bank</option>'+
+                                                    '<option value="12">Thanachart Bank</option>'+
+                                                    '<option value="13">STANDARD CHARTERED BANK (THAI)</option>'+
+                                                    '<option value="14">Government Housing Bank</option>'+
+                                                    '<option value="15">Land and House Bank</option>'+
+                                                    '<option value="16">Government Savings Bank</option>'+
+                                                    '<option value="17">Bank for Agriculture and Agricultural Cooperatives</option>'+
+                                                    '<option value="18">Islamic Bank of Thailand</option>'+
+                                                    '<option value="19">CIMB THAI</option>'+
+                                                '</select>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="col-xs-12 col-sm-12">'+
+                                        '<div class="col-xs-12 col-sm-12 form-group">'+
+                                            '<label class="col-xs-5 col-sm-5 col-pull-2 control-label"><strong>Account Number:&nbsp;</strong></label>'+
+                                            '<div class="col-xs-5 col-sm-5">'+
+                                                '<input type="text" id="accnum" name="accnum" value=""/>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</form>'+
+                    '</div>'+
+                '</div>',
+            buttons:            
+            {
+                "OK" :
+                {
+                    "label" : "<i class='ace-icon fa fa-check '></i> Save",
+                    "className" : "btn-sm btn-primary",
+                    "callback": function(e) {
+
+                        if($("#mobile_number").val() == ''){
+                            dialogError("No Data");
+                            return false;
+                        }else if($("#regis_code").val() == ''){
+                            dialogError("No Data");
+                            return false;
+                        }else{
+                            $.ajax({
+                                url: 'depositAuto/addUser',
+                                data: { 
+                                    user    : $("#user").val(),
+                                    bid     : $("#bid").val(),
+                                    accnum  : $("#accnum").val(),
+                                },
+                                type: 'GET',
+                                dataType: 'json',
+                                success: function (response) {
+                                    if(response.status){
+                                        dialogSuccess(response.msg);
+                                        userList();
+                                    }else{
+                                        dialogError(response.msg);
+                                    }
+                                },
+                                error: function (response) {
+                                    console.log(response);
+                                }
+                            });
+                        }
+                    }
+                },
+                "NO" :
+                {
+                    "label" : "<i class='ace-icon fa fa-close'></i> Cancel",
+                    "className" : "btn-sm btn-danger"
+                }
+            }
+        });
+    }
+
+    function autoDeposit(){
+        $.ajax({
+            url: 'depositAuto/autoDeposit',
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                $('#record').html(response.data);
+                console.log(response);
+            },
+            error: function (response) {
+                console.log(response);
+            }
+        });
+    }
+</script>
+</div>
+
+
+															
+
+															
+
+						
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/jquery-ui.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/jquery.easypiechart.min.js"></script>
+		<script src="assets/js/jquery.sparkline.index.min.js"></script>
+		<script src="assets/js/jquery.flot.min.js"></script>
+		<script src="assets/js/jquery.flot.pie.min.js"></script>
+		<script src="assets/js/jquery.flot.resize.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				$('.easy-pie-chart.percentage').each(function(){
+					var $box = $(this).closest('.infobox');
+					var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+					var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+					var size = parseInt($(this).data('size')) || 50;
+					$(this).easyPieChart({
+						barColor: barColor,
+						trackColor: trackColor,
+						scaleColor: false,
+						lineCap: 'butt',
+						lineWidth: parseInt(size/10),
+						animate: ace.vars['old_ie'] ? false : 1000,
+						size: size
+					});
+				})
+			
+				$('.sparkline').each(function(){
+					var $box = $(this).closest('.infobox');
+					var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+					$(this).sparkline('html',
+									 {
+										tagValuesAttribute:'data-values',
+										type: 'bar',
+										barColor: barColor ,
+										chartRangeMin:$(this).data('min') || 0
+									 });
+				});
+			
+			
+			  //flot chart resize plugin, somehow manipulates default browser resize event to optimize it!
+			  //but sometimes it brings up errors with normal resize event handlers
+			  $.resize.throttleWindow = false;
+			
+			  var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
+			  var data = [
+				{ label: "social networks",  data: 38.7, color: "#68BC31"},
+				{ label: "search engines",  data: 24.5, color: "#2091CF"},
+				{ label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
+				{ label: "direct traffic",  data: 18.6, color: "#DA5430"},
+				{ label: "other",  data: 10, color: "#FEE074"}
+			  ]
+			  function drawPieChart(placeholder, data, position) {
+			 	  $.plot(placeholder, data, {
+					series: {
+						pie: {
+							show: true,
+							tilt:0.8,
+							highlight: {
+								opacity: 0.25
+							},
+							stroke: {
+								color: '#fff',
+								width: 2
+							},
+							startAngle: 2
+						}
+					},
+					legend: {
+						show: true,
+						position: position || "ne", 
+						labelBoxBorderColor: null,
+						margin:[-30,15]
+					}
+					,
+					grid: {
+						hoverable: true,
+						clickable: true
+					}
+				 })
+			 }
+			 drawPieChart(placeholder, data);
+			
+			 /**
+			 we saved the drawing function and the data to redraw with different position later when switching to RTL mode dynamically
+			 so that's not needed actually.
+			 */
+			 placeholder.data('chart', data);
+			 placeholder.data('draw', drawPieChart);
+			
+			
+			  //pie chart tooltip example
+			  var $tooltip = $("<div class='tooltip top in'><div class='tooltip-inner'></div></div>").hide().appendTo('body');
+			  var previousPoint = null;
+			
+			  placeholder.on('plothover', function (event, pos, item) {
+				if(item) {
+					if (previousPoint != item.seriesIndex) {
+						previousPoint = item.seriesIndex;
+						var tip = item.series['label'] + " : " + item.series['percent']+'%';
+						$tooltip.show().children(0).text(tip);
+					}
+					$tooltip.css({top:pos.pageY + 10, left:pos.pageX + 10});
+				} else {
+					$tooltip.hide();
+					previousPoint = null;
+				}
+				
+			 });
+			
+				/////////////////////////////////////
+				$(document).one('ajaxloadstart.page', function(e) {
+					$tooltip.remove();
+				});
+			
+			
+			
+			
+				var d1 = [];
+				for (var i = 0; i < Math.PI * 2; i += 0.5) {
+					d1.push([i, Math.sin(i)]);
+				}
+			
+				var d2 = [];
+				for (var i = 0; i < Math.PI * 2; i += 0.5) {
+					d2.push([i, Math.cos(i)]);
+				}
+			
+				var d3 = [];
+				for (var i = 0; i < Math.PI * 2; i += 0.2) {
+					d3.push([i, Math.tan(i)]);
+				}
+				
+			
+				var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
+				$.plot("#sales-charts", [
+					{ label: "Domains", data: d1 },
+					{ label: "Hosting", data: d2 },
+					{ label: "Services", data: d3 }
+				], {
+					hoverable: true,
+					shadowSize: 0,
+					series: {
+						lines: { show: true },
+						points: { show: true }
+					},
+					xaxis: {
+						tickLength: 0
+					},
+					yaxis: {
+						ticks: 10,
+						min: -2,
+						max: 2,
+						tickDecimals: 3
+					},
+					grid: {
+						backgroundColor: { colors: [ "#fff", "#fff" ] },
+						borderWidth: 1,
+						borderColor:'#555'
+					}
+				});
+			
+			
+				$('#recent-box [data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('.tab-content')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+			
+					var off2 = $source.offset();
+					//var w2 = $source.width();
+			
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+			
+			
+				$('.dialogs,.comments').ace_scroll({
+					size: 300
+			    });
+				
+				
+				//Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+				//so disable dragging when clicking on label
+				var agent = navigator.userAgent.toLowerCase();
+				if(ace.vars['touch'] && ace.vars['android']) {
+				  $('#tasks').on('touchstart', function(e){
+					var li = $(e.target).closest('#tasks li');
+					if(li.length == 0)return;
+					var label = li.find('label.inline').get(0);
+					if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
+				  });
+				}
+			
+				$('#tasks').sortable({
+					opacity:0.8,
+					revert:true,
+					forceHelperSize:true,
+					placeholder: 'draggable-placeholder',
+					forcePlaceholderSize:true,
+					tolerance:'pointer',
+					stop: function( event, ui ) {
+						//just for Chrome!!!! so that dropdowns on items don't appear below other items after being moved
+						$(ui.item).css('z-index', 'auto');
+					}
+					}
+				);
+				$('#tasks').disableSelection();
+				$('#tasks input:checkbox').removeAttr('checked').on('click', function(){
+					if(this.checked) $(this).closest('li').addClass('selected');
+					else $(this).closest('li').removeClass('selected');
+				});
+			
+			
+				//show the dropdowns on top or bottom depending on window height and menu position
+				$('#task-tab .dropdown-hover').on('mouseenter', function(e) {
+					var offset = $(this).offset();
+			
+					var $w = $(window)
+					if (offset.top > $w.scrollTop() + $w.innerHeight() - 100) 
+						$(this).addClass('dropup');
+					else $(this).removeClass('dropup');
+				});
+			
+			})
+		</script>
+	</body>
+</html>
