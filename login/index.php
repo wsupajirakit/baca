@@ -39,10 +39,10 @@ $login_success = $_SESSION["login_success"];
 													$_SESSION["username"] = $objResult["Username_member"];
 													$_SESSION["role"] = $objResult["role"];
 													session_write_close();
-														if($objResult["role"] == "admin"){
+														// if($objResult["role"] == "admin"){
 															header("location:../index.php");
-														}	else	{
-														}
+														// }	else	{
+														// }
 													}
 
 														mysqli_close($objCon);

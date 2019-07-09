@@ -1,8 +1,21 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+session_start();
+}
    include('./env/config.php');
 try
    {
-        $sql = "SELECT * FROM member";
+
+
+        if($_SESSION["role"]=='admin'){
+                $sql = "SELECT * FROM member";
+        }else if($_SESSION["role"]=='agent'){
+                $sql = "SELECT * FROM member WHERE role='member'";
+        }
+
+
+
+
         $result = mysqli_query($objCon,$sql);
         $row = array();
         while($row = mysqli_fetch_array($result))

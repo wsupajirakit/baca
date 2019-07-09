@@ -826,9 +826,6 @@ font-size: 1.5rem !important;
 
 										<!-- div.dataTables_borderWrap -->
 										<div>
-
-
-											<div class="table-responsive">
 											<table id="dynamic-table" class="table table-striped table-bordered table-hover">
 												<thead>
 													<tr>
@@ -854,7 +851,6 @@ font-size: 1.5rem !important;
 													</tr>
 												</thead>
 											</table>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -1046,7 +1042,6 @@ font-size: 1.5rem !important;
 				$('#dynamic-table')
 				//.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
 				.DataTable( {
-					  responsive: true,
 					"ajax"     :{
 								"url":"fetch_data.php",
 								"dataSrc" : ""

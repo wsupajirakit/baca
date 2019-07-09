@@ -121,7 +121,9 @@ $login_success = $_SESSION["login_success"];
 								<img class="nav-user-photo" src="assets/images/avatars/profile.jpeg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
-									Admin
+									<?php
+										echo $_SESSION["username"];
+									?>
 								</span>
 
 								<i class="ace-icon fa fa-caret-down"></i>
@@ -202,8 +204,8 @@ $login_success = $_SESSION["login_success"];
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-cogs"></i>
-							<span class="menu-text"> Member Setup </span>
+							<i class="menu-icon fa fa-users"></i>
+							<span class="menu-text"> User Setup </span>
 
 							<b class="arrow fa fa-angle-down"></b>
 						</a>
@@ -214,7 +216,7 @@ $login_success = $_SESSION["login_success"];
 							<li class="">
 								<a href="create-member.php">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Create Member
+									Create User
 								</a>
 
 								<b class="arrow"></b>
@@ -223,6 +225,32 @@ $login_success = $_SESSION["login_success"];
 
 						</ul>
 					</li>
+
+
+					<!-- <li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-cogs"></i>
+							<span class="menu-text"> Customize </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="customize">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Image Logo Banner
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+						</ul>
+					</li> -->
+
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
